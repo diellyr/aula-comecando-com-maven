@@ -10,12 +10,12 @@
 <h:body>
 	<h:form id="frm">
 		<h:panelGrid columns="2" style="margin-top: 20px" id="painel" cellspacing="10px">
-			<p:outputLabel value="Nome:" for="nome" />
+			<p:outputLabel value="Texto:" for="nome" />
 			<p:inputText id="nome" size="20" value="#{exemploBean.nome}">
 				<p:ajax event="keyup" update="saida" listener="#{exemploBean.nomeAlterado}"/>
 			</p:inputText>
 			
-			<p:outputLabel value="Nome maiúsculo:" for="saida" />
+			<p:outputLabel value="Resultado em Maiusculo:" for="saida" />
 			<h:outputText id="saida" value="#{exemploBean.nome}" style="color: red; font-size: 1.3em"/>
 		</h:panelGrid>
 	</h:form>
